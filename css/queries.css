@@ -1,0 +1,92 @@
+/* *********************** */
+/* Below 944px (Tablets) */
+/* *********************** */
+@media (max-width: 59em) {
+  .container {
+    margin-inline: 4.8rem;
+  }
+
+  .section-game {
+    padding-bottom: 6.4rem;
+  }
+
+  .tool-img {
+    padding: 2.4rem;
+  }
+
+  .tool-img--selected {
+    padding: 2.4rem;
+  }
+
+  .play {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .player {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .result-container {
+    grid-column: 2 / 4;
+  }
+
+  .result {
+    font-size: 4.4rem;
+  }
+
+  .rules-btn {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* *********************** */
+/* Below 704px (Smaller Tablets) */
+/* *********************** */
+@media (max-width: 44em) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo-img {
+    height: 8rem;
+  }
+}
+
+/* *********************** */
+/* Below 544px (Phones) */
+/* *********************** */
+@media (max-width: 34em) {
+  .play {
+    column-gap: 4.8rem;
+  }
+
+  .tool-img {
+    border-width: 2rem;
+    height: 14rem;
+  }
+
+  .tool-img--selected {
+    border-width: 2rem;
+    height: 14rem;
+  }
+
+  .result-container {
+    grid-column: 1 / -1;
+  }
+}
+
+/* *********************** */
+/* Below 432px (Phones) */
+/* *********************** */
+@media (max-width: 27em) {
+  .play {
+    column-gap: 2.4rem;
+  }
+
+  .player p {
+    font-size: 2.2rem;
+  }
+}

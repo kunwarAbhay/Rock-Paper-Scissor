@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Paper, Scissors</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+</head>
+
+<body>
+  <!-- LOGO & SCORE -->
+  <header class="section-header">
+    <div class="container header">
+      <img src="images/logo.svg" alt="Logo" class="logo-img" />
+
+      <div class="score-container">
+        <p class="score-text">Score</p>
+        <p class="score-number">0</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION GAME -->
+  <section class="section-game">
+    <div class="container game">
+      <div class="triangle">
+        <img src="images/bg-triangle.svg" alt="triangle background" class="bg-img" />
+        <img src="images/icon-paper.svg" alt="paper" class="tool-img paper" data-tool="0" />
+        <img src="images/icon-rock.svg" alt="rock" class="tool-img rock" data-tool="1" />
+        <img src="images/icon-scissors.svg" alt="scissors" class="tool-img scissors" data-tool="2" />
+      </div>
+
+      <div class="hidden play">
+        <div class="player player--you">
+          <p>You picked</p>
+          <div class="you-selected">
+            <!-- <img src="images/icon-paper.svg" alt="You choose paper" class="tool-img--selected paper--selected" /> -->
+          </div>
+        </div>
+
+        <div class="hidden result-container">
+          <p class="result">you loose</p>
+          <button class="play-again">Play Again</button>
+        </div>
+
+        <div class="player player--house">
+          <p>The house picked</p>
+          <div class="house-selected">
+            <!-- <img src="images/icon-scissors.svg" alt="You choose scissors" class="tool-img--selected scissors--selected" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section-footer">
+    <button class="rules-btn">RULES</button>
+  </footer>
+
+  <!-- RULES MODAL -->
+  <div class="hidden rules">
+    <header>
+      <h2>Rules</h2>
+      <img src="images/icon-close.svg" alt="close modal" class="close-modal" />
+    </header>
+    <img src="images/image-rules.svg" alt="rules of the game" />
+  </div>
+
+  <div class="hidden overlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

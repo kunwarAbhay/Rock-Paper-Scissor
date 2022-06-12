@@ -1,0 +1,9 @@
+.vscode
+/design
+README-template.md
+README.md
+style-guide.md
+*.sketch
+*.xd
+*.fig
+.DS_Store
